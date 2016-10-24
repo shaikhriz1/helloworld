@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SMRC Health-Healing-Happiness</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Ultra|Wendy+One" rel="stylesheet">
+    <script src="smrcjs.js">
+
+	</script> 
+    <style></style>
+  </head>
+  <body>
+    <div class="mwrap">
+      <!--div class="fxdhdr"-->
+      <header>
+        <div class="hdr">
+          <div class="hdrimg"><img src="img/SMRC-Logo.gif." /></div>
+          <div class="hdrtxt">
+            <h1>SALGAOCAR MEDICAL RESEARCH CENTER</h1>
+            <h3>HEALTH ~ HEALING ~ HAPPINESS</h3>
+          </div>
+        </div>
+        <!--hdr-->
+        <div class="menubar">
+          <div class="menubox">
+            <div class="menu">
+              <h3><a href="index.html">Home</a></h3>
+            </div>
+            <!--menu-->
+            <div class="menu">
+              <h3>Care Centre</h3>
+              <div class="content">
+                <a href="cardsurg.html">
+                  <p>INTERVENTIONAL CARDIOLOGY</p>
+                </a>
+                <a href="gen_laproscopic.html">
+                  <p>SURGERY - GENERAL AND LAPAROSCOPIC</p>
+                </a>
+                <a href="urosurgery.html">
+                  <p>UROSURGERY</p>
+                </a>
+                <a href="orthosur.html">
+                  <p>ORTHOPAEDIC SURGERY</p>
+                </a>
+                <a href="intmed.html">
+                  <p>INTERNAL MEDICINE</p>
+                </a>
+                <a href="dermcos.html">
+                  <p>DERMATOLOGY AND COSMETOLOGY</p>
+                </a>
+              </div>
+            </div>
+            <!--menu-->
+            <div class="menu">
+              <h3>Patient Area</h3>
+              <div class="content">
+                <a href="wardinfo.html">
+                  <p>WARD INFORMATION</p>
+                </a>
+              </div>
+            </div>
+            <!--menu-->
+            <div class="menu">
+              <h3>Get In Touch</h3>
+              <div class="content">
+                <a href="cUS1.html">
+                  <p>MAKE AN APPOINTMENT</p>
+                </a>
+                <a href="cUS2.html">
+                  <p>LEAVE A FEEDBACK</p>
+                </a>
+              </div>
+            </div>
+            <!--menu-->
+            <div class="menu">
+              <a href="aboutus.html">
+                <h3>About Us</h3>
+              </a>
+            </div>
+            <!--menu-->
+          </div>
+        </div>
+        <!-- menubar-->
+        <!--/div--> <!--fxdhdr-->
+      </header>
+      <div class="mkappt">
+        <h1 class="h1center">Make an Appointment</h1>
+        <form name="cUS1" method="post">
+          <fieldset>
+            <legend>
+              <h1>Personal Information</h1>
+            </legend>
+            <table>
+              <tbody>
+                <tr>
+                  <td>First Name</td>
+                  <td><input type="text" name="fname" size="40" placeholder="Given Name. eg. Rizwan"></td>
+                </tr>
+                <tr>
+                  <td>Last Name</td>
+                  <td><input type="text" name="lname" size="40" placeholder="Surname Name. eg. Shaikh"></td>
+                </tr>
+                <tr>
+                  <td>Gender</td>
+                  <td> 
+                    <input type="radio" name="gender" id="male" value="male">Male	<input type="radio" name="gender" id="female" value="female">Female
+                  </td>
+                </tr>
+                <tr>
+                  <td>Date Of Birth</td>
+                  <td>
+				  <input type="number" name="date" id="date" min="01" max="31" value="">
+				  <input type="text" list="month" name="month">
+				  <datalist id="month">
+                      <option value="January">
+                      <option value="February">
+                      <option value="March">
+                      <option value="April">
+                      <option value="May">
+                      <option value="June">
+                      <option value="July">
+                      <option value="August">
+                      <option value="September">
+                      <option value="October">
+                      <option value="November">
+                      <option value="December">
+                    </datalist>
+                    <input type="number" name="year" id="year" min="1970" max="2016">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Appointment Date</td>
+                  <td>
+                    <input type="number" name="date" min="01" max="31">
+                    <input list="month2" name="month2">
+				  <datalist id="month2">                      
+                      <option value="October">
+                      <option value="November">
+                      <option value="December">
+					  <option value="January">
+                      <option value="February">
+                    </datalist>
+                    <input type="number" name="date" min="2016" max="2017">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Department Name </td>
+                  <td>
+				  
+				  <input list="dname" name="dname" style="width:260px">
+				  <datalist id="dname">                      
+                      <option value="CARDIOLOGY">
+                      <option value="GENERAL AND LAPAROSCOPIC">
+                      <option value="GYNAECOLOGY & OBSTETRICS">
+					  <option value="ORTHOPAEDIC">
+                      <option value="INTERNAL MEDICINE">
+					  <option value="DERMATOLOGY">
+                    </datalist>
+                  </td>
+                </tr>
+                <tr>
+                  <td >&nbsp</td>
+                  <td >OR</td>
+                </tr>
+                <tr>
+                  <td>Doctor Name</td>
+                  <td>
+				  <input list="dRname" name="dRname" style="width:260px">
+				  <datalist id="dRname">                      
+                      <option value="Dr. Anand Kamat">
+                      <option value="Dr. Pankajam Y Vaidya">
+                      <option value="Dr. Wilfred D'Sa">
+					  <option value="Dr. Priya M Nair">
+                      <option value="Dr. Yatindra Vaidya">
+					  <option value="Dr. Del-Ann Alcasoas">
+					  <option value="Dr. Shailesh Kamat">
+                    </datalist>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Contact Number</td>
+                  <td><input type="text" name="contact" style="width:260px"></td>
+                </tr>
+                <tr>
+                  <td>Email Address</td>
+                  <td><input type="email" name="email" style="width:260px"></td>
+                </tr>
+                <tr>
+                  <td style="text-align:right;"><input type="button" value="Submit" onclick="validate()" id="button"></td>
+                  <td style="text-align:center;"><input type="reset" value="Reset" id="button"></td>
+                </tr>
+              </tbody>
+            </table>
+          </fieldset>
+        </form>
+      </div>
+      <footer>
+        <!--div class="footer"-->
+        <div class="addr">
+          <address>
+		  <p>ADDRESS:</p>
+          <p>Airport Road, Chicalim,</p>
+          <p>Goa - 403711</p>
+          </address>
+        </div>
+        <div class="addr">
+         <p>CONTACT:</p>
+         <p>Phone No: 0832-6691919/ 2540083 / 2540218</p>
+         <p>Fax No: 0832-2542622</p>
+        </div>
+        <div class="addr">
+         <p>EMAIL:</p>
+         <p>smrc@smrcgoa.org</p>
+         <p>reception@smrcgoa.org</p>
+        </div>
+		<div class="footnote">
+		 <audio controls autoplay loop>
+			<source src="SleepAway.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>		
+		</div>
+        <div class="footnote">
+          <h2>&copy; Website Designed By Rizwan Shaikh PD161207 For CST-CA2</h2>
+        </div>
+        <!--/div-->
+      </footer>
+    </div>
+    <!-- mwrap-->
+  </body>
+</html>
